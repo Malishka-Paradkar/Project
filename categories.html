@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products Page</title>
-    <link rel="stylesheet" href="style_p.css">
+    <title>Categories Page</title>
+    <link rel="stylesheet" href="style_c.css">
     <script src="https://kit.fontawesome.com/d9f55f49c0.js" crossorigin="anonymous"></script>
 </head>
 
@@ -29,6 +29,31 @@
             </ul>
         </div>
     </section>
+
+    <section id="filters">
+        <h3>Filters</h3>
+        <form id="filter-form">
+            <label for="price-range">Price Range:</label>
+            <select id="price-range">
+                <option value="">Select</option>
+                <option value="0-50">0 - 50</option>
+                <option value="51-100">51 - 100</option>
+                <option value="101-150">101 - 150</option>
+            </select>
+
+            <label for="discount">Discount:</label>
+            <select id="discount">
+                <option value="">Select</option>
+                <option value="10">10% and above</option>
+                <option value="20">20% and above</option>
+                <option value="50">50% and above</option>
+            </select>
+
+            <button type="button" id="apply-filters">Apply</button>
+            <button type="reset" id="clear-filters">Clear</button>
+        </form>
+    </section>
+
 
     <section id="product-container">
         <h2>Products</h2>
@@ -336,10 +361,6 @@
         </div>
     </section>
     
-    <div id="view-all-container">
-        <a href="categories.html" class="view-all-btn">View All</a>
-    </div>    
-
     <footer>
         <p>&copy; FarmPure. All rights reserved.</p>
         <div class="social-icons">

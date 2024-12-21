@@ -335,30 +335,50 @@ footer p {
     background: #0b5e07;
 }
 
-#view-all-container {
-    text-align: center;
-    padding: 20px 0; 
-    background-color: #f9f9f9; 
-}
-
-.view-all-btn {
-    padding: 15px 20px;
-    background: #107d09;
-    color: #ffffff;
-    border: none;
+/* Filters section styling */
+#filters-container {
+    display: none; /* Hidden by default */
+    margin: 20px 0;
+    padding: 15px;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    font-size: 16px;
-    font-weight: 600;
+    background-color: #f9f9f9;
+}
+
+#filters-container .filter-item {
+    margin: 5px 0;
+}
+
+#filters-container button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #f05454;
+    color: white;
+    border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    text-decoration: none;
+    font-size: 14px;
 }
 
-.view-all-btn:hover {
-    background: #0b5e07;
+#filters-container button:hover {
+    background-color: #ff7b7b;
 }
 
+/* Category card styling */
+.category-card {
+    text-align: center;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+    border-color: #54b4d3;
+}
 
 @media (max-width: 768px) {
     #hero-container {
