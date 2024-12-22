@@ -25,7 +25,7 @@
                 <li><a href="search.html"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 <li><a href="map.html"><i class="fa-solid fa-location-dot"></i></a></li>
                 <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
-                <li><a href="profile.html"><i class="fa-solid fa-user"></i></a></li>
+                <li><a href="u_profile.html"><i class="fa-solid fa-user"></i></a></li>
             </ul>
         </div>
     </section>
@@ -33,24 +33,62 @@
     <section id="filters">
         <h3>Filters</h3>
         <form id="filter-form">
-            <label for="price-range">Price Range:</label>
-            <select id="price-range">
-                <option value="">Select</option>
-                <option value="0-50">0 - 50</option>
-                <option value="51-100">51 - 100</option>
-                <option value="101-150">101 - 150</option>
-            </select>
+            <div class="filter-group">
+                <label for="farmer-name">Farmer Name:</label>
+                <select id="farmer-name" name="farmer" required>
+                    <option value="" disabled selected>Select Farmer</option>
+                    <option value="">Raghav Singh</option>
+                    <option value="">Veerendra Yadav</option>
+                    <option value="">Rajesh Kumar</option>
+                    <option value="">Gurvinder Singh</option>
+                    <option value="">Manoj Patel</option>
+                    <option value="">Shivraj Choudhary</option>
+                    <option value="">Prakash Reddy</option>
+                    <option value="">Vikram Pandey</option>
+                    <option value="">Ajay Rawat</option>
+                    <option value="">Hari Prasad</option>
+                    <option value="">Ramlal Choudhary</option>
+                    <option value="">Ravindra Tiwari</option>
+                    <option value="">Keshav Jadhav</option>
+                    <option value="">Vinod Tripathi</option>
+                </select>
+            </div>
 
-            <label for="discount">Discount:</label>
-            <select id="discount">
-                <option value="">Select</option>
-                <option value="10">10% and above</option>
-                <option value="20">20% and above</option>
-                <option value="50">50% and above</option>
-            </select>
+            <div class="filter-group">
+                <label for="product-category">Product Categories:</label>
+                <select id="product-category" name="category" required>
+                    <option value="" disabled selected>Select a Category</option>
+                    <option value="vegetables">Vegetables</option>
+                    <option value="fruits">Fruits</option>
+                    <option value="dairy">Dairy</option>
+                </select>
+            </div>
 
-            <button type="button" id="apply-filters">Apply</button>
-            <button type="reset" id="clear-filters">Clear</button>
+            <div class="filter-group">
+                <label for="price-range">Price Range:</label>
+                <select id="price-range">
+                    <option value="" disabled selected>Select</option>
+                    <option value="0-50">₹0 - ₹50</option>
+                    <option value="51-100">₹51 - ₹100</option>
+                    <option value="101-150">₹101 - ₹150</option>
+                    <option value="151-200">₹151 - ₹200</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="discount">Discount:</label>
+                <select id="discount">
+                    <option value="" disabled selected>Select</option>
+                    <option value="10">10% and above</option>
+                    <option value="20">20% and above</option>
+                    <option value="50">50% and above</option>
+                </select>
+            </div>
+
+            <div class="filter-buttons">
+                <button type="button" id="apply-filters">Apply</button>
+                <button type="reset" id="clear-filters">Clear</button>
+            </div>
         </form>
     </section>
 
